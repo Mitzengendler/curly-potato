@@ -19,8 +19,10 @@ private:
 	double y;
 public:
 	double calculate(double x, double y) override;
+	double calculate(double x, double y, double z) override;
 	void setX(double a) override;
 	void setY(double b) override;
+	void setZ(double c) override;
 };
 
 class ThreeVarFunc : public IseveralFunc {
@@ -29,6 +31,7 @@ private:
 	double y;
 	double z;
 public:
+	double calculate(double x, double y) override;
 	double calculate(double x, double y, double z) override;
 	void setX(double a) override;
 	void setY(double b) override;

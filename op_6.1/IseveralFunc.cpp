@@ -5,6 +5,11 @@ double TwoVarFunc::calculate(double x, double y)
 	return pow(x, 2) + sqrt(3 * pow(y, 3));
 }
 
+double TwoVarFunc::calculate(double x, double y, double z)
+{
+	return 0.0;
+}
+
 void TwoVarFunc::setX(double a)
 {
 	this->x = a;
@@ -13,6 +18,16 @@ void TwoVarFunc::setX(double a)
 void TwoVarFunc::setY(double b)
 {
 	this->y = b;
+}
+
+void TwoVarFunc::setZ(double c)
+{
+
+}
+
+double ThreeVarFunc::calculate(double x, double y)
+{
+	return 0.0;
 }
 
 double ThreeVarFunc::calculate(double x, double y, double z)
