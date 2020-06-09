@@ -24,11 +24,13 @@ int main()
         cout << "Enter x: ";
         double n;
         cin >> n;
-        a->x = n;
+        //a->x = n;
+        a->setX(n);
         cout << "Enter y: ";
         double m;
         cin >> m;
-        a->y = m;
+        //a->y = m;
+        a->setY(m);
         cout << "Result: " << a->calculate();
         break;
     }
@@ -38,15 +40,18 @@ int main()
         cout << "Enter x: ";
         double i;
         cin >> i;
-        a->x = i;
+        //a->x = i;
+        a->setX(i);
         cout << "Enter y: ";
         double j;
         cin >> j;
-        a->y = j;
+        //a->y = j;
+        a->setY(j);
         cout << "Enter z: ";
         double k;
         cin >> k;
-        a->z = k;
+        //a->z = k;
+        a->setZ(k);
         cout << "Result: " << a->calculate();
         break;
     }
