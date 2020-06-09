@@ -5,35 +5,23 @@
 
 class IseveralFunc
 {
-public:
-	virtual double calculate(double x, double y) = 0;
-	virtual double calculate(double x, double y, double z) = 0;
-	virtual void setX(double a) = 0;
-	virtual void setY(double b) = 0;
-	virtual void setZ(double c) = 0;
-};
-
-class TwoVarFunc : public IseveralFunc {
 private:
-	double x;
-	double y;
-public:
-	double calculate(double x, double y) override;
-	double calculate(double x, double y, double z) override;
-	void setX(double a) override;
-	void setY(double b) override;
-	void setZ(double c) override;
-};
 
-class ThreeVarFunc : public IseveralFunc {
-private:
+public:
+	virtual double calculate() {
+		return 0;
+	}
 	double x;
 	double y;
 	double z;
+};
+
+class TwoVarFunc : public IseveralFunc {
 public:
-	double calculate(double x, double y) override;
-	double calculate(double x, double y, double z) override;
-	void setX(double a) override;
-	void setY(double b) override;
-	void setZ(double c) override;
+	double calculate() override;
+};
+
+class ThreeVarFunc : public IseveralFunc {
+public:
+	double calculate() override;
 };
