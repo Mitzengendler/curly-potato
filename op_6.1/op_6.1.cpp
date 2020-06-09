@@ -16,11 +16,31 @@ int main()
     switch (n)
     {
     case(1): {
-        cout << a.calculate(1, 1);
+        cout << "Enter x: ";
+        double n;
+        cin >> n;
+        a.setX(n);
+        cout << "Enter y: ";
+        double m;
+        cin >> m;
+        a.setY(m);
+        cout << "Result: " << a.calculate(n, m);
         break;
     }
     case(2): {
-        cout << b.calculate(1, 1, 1);
+        cout << "Enter x: ";
+        double i;
+        cin >> i;
+        b.setX(i);
+        cout << "Enter y: ";
+        double j;
+        cin >> j;
+        b.setY(j);
+        cout << "Enter z: ";
+        double k;
+        cin >> k;
+        b.setZ(k);
+        cout << "Result: " << b.calculate(i, j, k);
         break;
     }
     default:
